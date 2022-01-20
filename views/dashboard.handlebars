@@ -1,0 +1,32 @@
+{{#if posts.length}}
+<section>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <button type="button" class="btn">
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">edit post</a>
+      </button>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<button type="button" class="btn">Create New Post</button>
+
+<section>
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-body">Body</label>
+      <textarea name="post-body"></textarea>
+    </div>
+    <button type="submit" class="btn">Post</button>
+  </form>
+</section>
+
+<script src="/javascript/add-post.js"></script>
