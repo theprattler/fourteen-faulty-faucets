@@ -1,6 +1,6 @@
 <article class="post">
   <div class="post-heading">
-    {{post.title}} by {{post.user.username}} on {{post.created_at}}
+    {{post.title}} by {{post.user.username}} on {{format_date post.created_at}}
   </div>
 
   <div class="post-content">
@@ -23,7 +23,7 @@
   {{#each post.comments}}
   <section class="comment">
     <div class="comment-cred">
-      {{user.username}} on {{created_at}}
+      {{user.username}} on {{format_date created_at}}
     </div>
     <div class="comment-text">
       {{comment_text}}
