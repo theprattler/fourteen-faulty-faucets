@@ -1,4 +1,5 @@
 <div class="post-comments">
+  <h2>Comments:</h2>
   {{#each this}}
   <section class="comment">
     <div class="comment-cred">
@@ -7,7 +8,7 @@
     <div class="comment-text">
       {{comment_text}}
     </div>
-    {{#if loggedIn}}
+    
     <div class="btn-row">
       <div>
         <button type="button" class="edit-comment-btn">edit</button>
@@ -16,7 +17,11 @@
         <button type="button" class="delete-comment-btn">delete</button>
       </div>
     </div>
-    {{/if}}
+    
   </section>
   {{/each}}
 </div>
+<script src="/javascript/login.js"></script>
+<script src="/javascript/logout.js"></script>
+<script src="/javascript/edit-comment"></script>
+<script src="/javascript/delete-comment"></script>

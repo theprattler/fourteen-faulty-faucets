@@ -154,8 +154,14 @@ main {
   transition: background-color .2s;
 }
 
-.comment:nth-child(odd) {
+.comment:nth-child(even) {
   background-color: lightsteelblue;
+  border-radius: 5px;
+  border: 1px solid #222;
+}
+
+.comment:nth-child(odd) {
+  background-color:rgb(219, 219, 219);
   border-radius: 5px;
   border: 1px solid #222;
 }

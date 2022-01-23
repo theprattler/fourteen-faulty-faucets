@@ -86,7 +86,6 @@ router.put('/:id', withAuth, (req, res) => {
     {
       title: req.body.title,
       contents: req.body.contents,
-      user_id: req.session.user_id
     },
     {
       where: {
