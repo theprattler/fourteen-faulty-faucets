@@ -10,6 +10,10 @@ body, html {
   color: #222;
 }
 
+h1 {
+  font-size: 42px;
+}
+
 a {
   text-decoration: none;
   color: darkblue;
@@ -52,6 +56,10 @@ button:hover {
   color: blue;
 }
 
+ol {
+  list-style: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -65,6 +73,8 @@ main {
   flex: 1;
   padding: 2% 4%;
 }
+
+/* SINGLE POST styling */
 
 .post {
   margin-bottom: 2%;
@@ -89,7 +99,6 @@ main {
   border: 1px solid #222;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 15px;
 }
 
 .comment-form {
@@ -151,7 +160,61 @@ main {
   border: 1px solid #222;
 }
 
+/* DASHBOARD */
 
+#post-list {
+  margin-bottom: 20px;
+}
+
+#post-title {
+  width: 100%;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  background-color: lightsteelblue;
+}
+
+#post-body {
+  width: 100%;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  background-color: rgb(219, 219, 219);
+}
+
+#post-btn:hover {
+  background-color: green;
+  transition: background-color .2s;
+}
+
+.edit-link {
+  color: white;
+}
+
+.edit-link:hover {
+  color: white;
+}
+
+#edit-post-btn {
+  color: white;
+}
+
+#edit-post-btn:hover {
+  background-color: yellow;
+  transition: background-color .2s;
+}
+
+.save-post-btn:hover {
+  background-color: green;
+  transition: background-color .2s;
+}
+
+.delete-post-btn:hover {
+  background-color: red;
+  transition: background-color .2s;
+}
 
 footer {
   border-top: 1px solid #222;
