@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+  transition: color .2s;
+}
+
+a:hover {
+  color: blue;
+}
+
+button {
+  background-color: blue;
+  border: 0;
+  padding: 4px;
+  color: white;
+  transition: background-color .2s;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: darkblue;
+  transition: color .2s;
+  font-size: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: blue;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  border-bottom: 1px solid #222;
+  background-color: lightsteelblue;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 125%;
+}
+
+.post-heading {
+  background-color: lightsteelblue;
+  border: 1px solid #222;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.post-heading span {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.post-content {
+  background-color: rgb(219, 219, 219);
+  border: 1px solid #222;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.comment-form {
+  margin-top: 20px;
+  flex: inline;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #222;
+}
+
+#comment-body {
+  width: 75%;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+}
+
+.add-comment-btn:hover {
+  background-color: green;
+  transition: background-color .2s;
+}
+
+.post-comments {
+  margin-top: 10px;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment-cred span {
+  font-weight: bolder;
+}
+
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+.edit-comment-btn {
+  margin-right: 7px;
+}
+
+.edit-comment-btn:hover {
+  background-color: yellow;
+  transition: background-color .2s;
+}
+
+.delete-comment-btn:hover {
+  background-color: red;
+  transition: background-color .2s;
+}
+
+.comment:nth-child(odd) {
+  background-color: lightsteelblue;
+  border-radius: 5px;
+  border: 1px solid #222;
+}
+
+
+
+footer {
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  background-color: lightsteelblue;
+}
+
