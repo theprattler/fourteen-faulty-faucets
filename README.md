@@ -20,5 +20,8 @@ A blog app demonstrating RESTful CRUD operations where a user can:
 * mysql2
 * sequelize
 
+## Deployed to Heroku
+https://obscure-hollows-73847.herokuapp.com/
+
 ## Screenshot Preview
 ![Screenshot of The Tech Blog](./assets/the-tech-blog.png)
